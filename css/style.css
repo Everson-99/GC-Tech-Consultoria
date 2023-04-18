@@ -95,11 +95,11 @@ nav ul a:hover::after {
     width: 100%;
 
 }
-/* inicio do nosso serviços Resumo da empresa*/
+/* inicio do  Resumo da empresa*/
 .conteiner-resumo{
     display: flex;
     align-items: center;
-    
+    background-color: #f0f0f0;
 }
 .title-resumo h2{
     
