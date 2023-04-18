@@ -164,6 +164,14 @@ nav ul a:hover::after {
     font-size: 50px;
 
 }
+.faca-mais p{
+    display: flex;
+    text-align: left;
+    margin:0px;
+    padding-top: 3%;
+
+
+}
 
 .faca-mais .faca-mais-text p{
     font-size: 20px;
@@ -192,6 +200,11 @@ nav ul a:hover::after {
 
 }
 */
+.card__title__dev{
+    text-align:center;
+    justify-content: center;
+    display: flex;
+}
 .faca-mais__title {
     margin: 0 auto;
     display: flex;
@@ -225,7 +238,8 @@ nav ul a:hover::after {
 
 }
 .card {
-padding:3%
+padding:2%
+
 }
 /*
 .card__link {
