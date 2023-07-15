@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@800 & family= Open+Sans & display=swap');
 
+.historia {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
 * {
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +17,19 @@
     outline: none;
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
+   
+        
+
 }
 
 body {
     background-color: #f1f6fc31;
+
 }
 
 section,
 footer {
-    padding: 54px 0;
+    padding: 54px 0px 0px 0px;
 
 }
 
@@ -30,12 +43,44 @@ p {
 
 .conteiner {
     max-width: 1400px;
+    min-width: 900px;
     margin: 0 auto;
     padding: 0 5%;
+    
+}
+ /* Estilos para tornar o menu responsivo */
+ .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.ul li {
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+}
 .background-image {
+    
     max-width: 1400px;
+    min-width: 900px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .btn {
@@ -58,6 +103,9 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 nav {
@@ -95,44 +143,71 @@ nav ul a:hover::after {
     width: 100%;
 
 }
+
 /* inicio do  Resumo da empresa*/
-.conteiner-resumo{
+.conteiner-resumo {
     display: flex;
+    width: 50%;
+    justify-content: space-around;
     align-items: center;
     background-color: #f0f0f0;
 }
-.title-resumo h2{
-    
+
+.title-resumo h2 {
     display: flex;
-    justify-content:space-around;
+    width: 100%;
+    justify-content: space-around;
     font-size: 43px;
     color: rgb(29, 71, 195);
 
 
 }
 
-.conteiner-resumo .conteiner-resumo-text{
-    width: 50%;
+.conteiner-resumo .conteiner-resumo-text {
+    width: 100%;
     text-align: center;
-    display: flex;
     justify-content: center;
     margin: 0 auto;
-}
-.conteiner-resumo-text p{
-    
     display: flex;
-    text-align: justify;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.conteiner-resumo-text p {
+
+    display: flex;
+    
     font-size: 30px;
     
-    
+
 }
-.conteiner-resumo-img{
+
+.conteiner-resumo-img {
+    width: 50%;
     display: flex;
     margin: 0 auto;
+
+    
 }
 
 
+ .resumo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-resumo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
+    }
+    
+    .container-resumo-img {
+        margin-bottom: 20px;
+
+    }
 
 /* inicio do nosso serviços FACA MAIS */
 
@@ -140,124 +215,95 @@ nav ul a:hover::after {
     width: 10%;
     padding: 0 40px;
     display: flex;
-    align-items: center;   
-      
+    align-items: center;
+
 }
 
-.faca-mais-img{
+.faca-mais-img {
     display: flex;
     justify-content: space-around;
     padding: 40px;
+    
 
 }
 
-.faca-mais .faca-mais-text h3{
+ .card:hover{
+     color: #25d366;
+     transform: scale(1.12);
+     transition: 0.4s;
+ }
+ 
+
+.faca-mais .faca-mais-text h3 {
     font-size: 60px;
     display: block;
     align-items: center;
     justify-content: center;
     padding: 5px;
-    
+
 }
-.faca-mais h3{
+
+.faca-mais h3 {
     color: rgb(29, 71, 195);
     font-size: 50px;
 
 }
-.faca-mais p{
-    display: flex;
-    text-align: left;
-    margin:0px;
-    padding-top: 3%;
 
-
-}
-
-.faca-mais .faca-mais-text p{
-    font-size: 20px;
-    
-}
-
-.faca-mais .faca-mais-img{
-    width: 100%;
-}
-
-
-
-
-.faca-mais{
-    max-width: 1400px;
-    justify-content: center;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+.faca-mais {
+    background-color: #fff;
+    padding: 40px 0;
     text-align: center;
-    flex-direction: column;
+}
+
+.faca-mais h3 {
     
-}
-/*
-.card__link {
-
-}
-*/
-.card__title__dev{
-    text-align:center;
-    justify-content: center;
-    display: flex;
-}
-.faca-mais__title {
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-
+    margin-bottom: 20px;
 }
 
-
-
-/*
-
-.faca-mais__subtitle {
-*/
+.faca-mais h4 {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 40px;
+}
 
 .faca-mais-img {
-    max-width: 1400px;
     display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    align-items: center;
-    margin: 0 auto;
-
-}
-.faca-mais h2{
-    display: block;
-    align-items: center;
     justify-content: center;
-    color: black;
-    margin: 0 auto;
-    font-size: 23px;
-
+    flex-wrap: wrap;
 }
-.card {
-padding:2%
 
+.faca-mais-img .card {
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
+
+.faca-mais-img .card__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.faca-mais-img .card__title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.faca-mais-img .paragraph {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
 /*
-.card__link {
 
-}
-
-
-.card__image {
-
-}
-
-.card__title {
-
-}
-
-.paragraph {
-
-}
 /*
 /* -------------------------------inicio do footer------------------------------- */
 
@@ -284,6 +330,7 @@ main {
 footer {
     width: 100%;
     color: var(--color-neutral-40);
+
 }
 
 .footer-link {
@@ -300,6 +347,7 @@ footer {
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
 }
+
 #footer_contacts p {
     color: var(--color-neutral-30);
 }
@@ -308,7 +356,7 @@ footer {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
-} 
+}
 
 #footer_social_media .footer-link {
     display: flex;
@@ -322,8 +370,9 @@ footer {
 }
 
 #footer_social_media .footer-link i {
-    font-size: 1.25rem;    
+    font-size: 1.25rem;
 }
+
 #footer_social_media .footer-link:hover {
     opacity: 0.8;
 }
@@ -346,10 +395,11 @@ footer {
     gap: 0.75rem;
     list-style: none;
     font-size: 15px;
-    
+
 
 }
-.footer-list h3{
+
+.footer-list h3 {
     font-size: 35px;
 
 }
@@ -396,16 +446,53 @@ footer {
 
 @media screen and (max-width: 768px) {
     #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
     }
 }
 
 @media screen and (max-width: 426px) {
-    #footer_content {
+    .faca-mais-img {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
 }
 
-/* -------------------------------fim do footer------------------------------- */
+@media  (max-width: 768px) {
+    .faca-mais .card {
+        display: flex;
+        flex-direction: column;
+      
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    ul.ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    
+    ul.ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .container-resumo {
+        text-align: center;
+    }
+    
+    .container-resumo-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .faca-mais-img {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
